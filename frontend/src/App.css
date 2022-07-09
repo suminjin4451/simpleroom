@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+button {
+  outline: none;
+  border: solid;
+  border-color: #282c34;
+  border-width: 2px;
+  background-color: white;
+  color: #282c34;
+  font-weight: 900;
+}
+ul {
+  list-style: none;
+  float: right;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,20 +25,146 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
+.inputItems {
+  width: fit-content;
+  display: flex;
+  height: 30px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #282c34;
+  color: white;
+  border-style:solid;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 15px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #F0F0F0;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchItemList{
+  border-style:solid;
+  background-color: #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  line-height: 10px;
+  color: #000000;
+  text-align: center;
+  box-shadow: inset;
+  border-color: rgba(120, 120, 120, 0.7);
+  border-width: 2px;
+}
+.header {
+  width:auto;
+  height:50px;
+  display: flex;
+  color: white;
+  background-color: #282c34;
+
+}
+
+.App-body {
+  background-color: #FAFAFA;
+  color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
+.Finder {
+  display:inline;
+  width: 600px;
+  outline: auto;
+  outline-width: 2px;
+  outline-color: #F0F0F0;
+}
+.SearchBar {
+  display: flex;
+  vertical-align: middle;
+  height:30px;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  font-weight: 100;
+  font-size: 10pt;
+  border-width: 2px;
+
+  outline: auto;
+  outline-color: #F0F0F0;
+}
+
+.SearchBar input:focus {
+  outline:none;
+  border:none;border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;
+}
+.SearchBar input {
+  width:90%;
+  background-color: inherit;
+  border:none;border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;
+}
 .App-link {
   color: #61dafb;
+}
+
+.LoadCodeBox {
+  width: 20vmax;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.ItemsBox {
+  width: 60vmax;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Finder {
+  background-color: white;
+  width:40vmax;
+}
+
+.itemList {
+  border-style:solid;
+  background-color: #FFFFFF;
+  font-family: 'KoPubDotumMedium', sans-serif;
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  line-height: 10px;
+  color: #000000;
+  text-align: center;
+  box-shadow: inset;
+  border-color: rgba(120, 120, 120, 0.7);
+  border-width: 2px;
 }
 
 @keyframes App-logo-spin {
